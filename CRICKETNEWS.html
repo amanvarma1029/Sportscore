@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Images</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="crickethome.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="sports">Sports News</h1>
+  </header>
+
+  <nav>
+    <a href="HOME.html">Home</a>
+        <a href="FOOTBALLNEWS.html">Football</a>
+        <a href="F1HOME.html">F1</a>
+        <a href="CRICKETNEWS.html">Cricket</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  
+  
+    <div id="live-info">
+      <span id="live-icon">&#9673;</span>
+      <p class="live-text">Live Score Board</p>
+    </div>
+  
+    <div class="score-board">
+      <table class="team" id="team1">
+        <caption>STANDINGS</caption>
+        <tr>
+          <th>Teams</th>
+          <th>Wins</th>
+          <th>Loss</th>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>14</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Australia</td>
+          <td>12</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>England</td>
+          <td>11</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>South Africa</td>
+          <td>
+            10
+          </td>
+          <td>
+            4
+          </td>
+        </tr>
+      </table>
+      </div>
+  
+  <div id="imageContainer">
+    <div class="imageCard" onclick="navigateTo('cricket1.html')">
+      <img src="cricketimg/crickethome1.jpg" alt="Image 1">
+      <div class="imageText"><b>India may have started dreaming of another big when Sri Lanka introduced left-arm spinner Dunith Wellalage into the attack who broke the opening <br>stand with the <br> wicket of Shubman Gill.</b></div>
+    </div>
+
+    <div class="imageCard" onclick="navigateTo('cricket2.html')">
+      <img src="cricketimg/crickethome2.jpg" alt="Image 2">
+      <div class="imageText"><b>Duntih Wellalage ran through the India top-order as he got rid ofbr
+         <br>Shubman Gill, Virat Kohli and Rohit Sharma in successive overs</b></div>
+    </div>
+
+    <div class="imageCard" onclick="navigateTo('cricket3.html')">
+      <img src="cricketimg/crickethome3.jpg" alt="Image 3">
+      <div class="imageText"><b>Asia Cup 2023,IND vs SL <br>in Pictures:India Seal Final Berth <br>With Impressive Win</b></div>
+    </div>
+    
+
+    <div class="imageCard" onclick="navigateTo('cricket4.html')">
+      <img src="cricketimg/crickethome4.jpg" alt="Image 4">
+      <div class="imageText"> <b> Rohit Sharma was undone < by the one that stayed low after having registered his <br> third straight half-century in a row </b></div>
+    </div>
+  </div>
+
+  <script>
+    function navigateTo(url) {
+      window.location.href = url;
+    }
+  </script>
+</div>
+<footer class="footer">
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  
+  
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+  </ul>
+  <p>&copy;2024  </p>
+
+
+</body>
+
+</html>

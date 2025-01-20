@@ -1,0 +1,184 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', cursive; /* Font style */
+  line-height: 1.6;
+  background-color: #f8f8f8; /* Light background color */
+}
+
+/* Header Style */
+header {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1.sports {
+  font-size: 2.5em; /* Header size */
+}
+
+/* Navigation Style */
+nav {
+  background-color: #333; /* Dark background */
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ddd; /* Light gray on hover */
+  color: black;
+}
+
+/* Live Info Style */
+#live-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+#live-icon {
+  font-size: 1.0em; /* Icon size */
+  margin-right: 10px;
+}
+
+/* Scoreboard Style */
+.score-board {
+  display: flex;
+  justify-content: center; /* Center the tables */
+  margin: 8px; /* Reduce margin between tables */
+  gap: 100px; /* Add small gap between tables */
+}
+
+.team {
+  background-color: white; /* White background for tables */
+  border-collapse: collapse; /* Remove spacing */
+  width: 900px; /* Reduced width for smaller tables */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 5px; /* Small margin between tables */
+}
+
+.team caption {
+  font-size: 2.2em; /* Adjust caption size for small tables */
+  margin: 10px;
+  color: #333;
+}
+
+th, td {
+  padding: 15px; /* Reduced padding for table cells */
+  text-align: center; /* Centered text */
+}
+
+th {
+  background-color: #4CAF50; /* Green header */
+  color: white; /* White text */
+}
+
+/* Image Container */
+#imageContainer {
+  display: flex;
+  flex-wrap: wrap; /* Wrap images to the next line */
+  justify-content: center; /* Center images */
+  margin: 20px 0;
+}
+
+.imageCard {
+  margin: 10px; /* Margin between image cards */
+  cursor: pointer; /* Pointer on hover */
+  text-align: center;
+  width: 250px; /* Fixed width for cards */
+  background-color: white; /* White background for image cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s; /* Transition for scaling effect */
+}
+
+.imageCard:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.imageCard img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 8px; 
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);/* Rounded corners */ /* Rounded corners */
+}
+
+.imageText {
+  padding: 10px;
+  color: #333; /* Dark text color */
+}
+
+/* Footer Style */
+.footer {
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative; /* Required for proper placement of waves */
+}
+
+.menu {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.menu__item {
+  display: inline;
+  margin: 0 15px; /* Space between menu items */
+}
+
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #live-info {
+    flex-direction: column; /* Stack live info on mobile */
+  }
+
+  nav a {
+    display: block; /* Stack links on mobile */
+    padding: 10px;
+  }
+
+  .score-board {
+    flex-direction: column; /* Stack scoreboards on mobile */
+    align-items: center; /* Center items */
+  }
+
+  .team {
+    width: 80%; /* Wider tables on mobile */
+    margin: 10px 0; /* Margin for stacking */
+  }
+
+  #imageContainer {
+    flex-direction: column; /* Stack image cards on mobile */
+    align-items: center; /* Center cards */
+  }
+
+  .imageCard {
+    width: 90%; /* Wider cards on mobile */
+  }
+
+  .menu__item {
+    display: block; /* Stack footer menu items on mobile */
+    margin: 10px 0; /* Space between items */
+  }
+}

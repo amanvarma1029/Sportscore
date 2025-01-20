@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Full height */
+}
+
+body {
+    font-family: 'Audiowide', cursive;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light background color */
+    display: flex;
+    flex-direction: column; /* Makes the body a flex container */
+    justify-content: space-between; /* Ensures footer stays at bottom */
+}
+
+/* Header Style */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1.sports {
+    font-size: 2.5em; /* Header size */
+}
+
+/* Navigation Style */
+nav {
+    background-color: #333; /* Dark background */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd; /* Light gray on hover */
+    color: black;
+}
+
+/* Live Info Style */
+#live-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #e7e7e7; /* Light gray background */
+}
+
+#live-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.live-text {
+    font-size: 1.2em;
+}
+
+/* Score Image Style */
+.f1score {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.f1score img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+}
+
+/* Image Container and Cards */
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.imageCard {
+    background-color: white; /* White background for cards */ /* Light gray border */
+    border-radius: 1px; /* Rounded corners */
+    width: 300px; /* Fixed width */
+    margin: 10px; /* Space between cards *//* Shadow effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s; /* Animation on hover */
+    padding-bottom: 50px;
+    paddi
+}
+
+.imageCard:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.imageCard img {
+    width: 300px; /* Responsive image */
+    height: 250px;
+    border-radius: 3px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5); /* Rounded corners for top */
+}
+
+/* Footer Style */
+.footer {
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0; /* Footer stays at the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer .waves {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.menu__item {
+    display: inline;
+    margin: 0 15px; /* Space between menu items */
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #imageContainer {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center;
+    }
+
+    .imageCard {
+        width: 90%; /* Full width on mobile */
+    }
+}
